@@ -1,0 +1,49 @@
+{
+  "name" : "Rain",
+  "configuration" : {
+    "battery_type" : "2x1.5V AAA"
+  },
+  "bat_max" : 6000,
+  "bat_min" : 3600,
+  "commands" : [
+    {
+      "name":"Pluie",
+      "logicalId" : "rain",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "generic_type": "RAIN_TOTAL",
+      "template" : {
+        "dashboard" : "core::rain",
+        "mobile" : "core::rain"
+      },
+      "unite" : "mm"
+    },
+    {
+      "name":"Pluie 24H",
+      "logicalId" : "sum_rain_24",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "generic_type": "RAIN_TOTAL",
+      "template" : {
+        "dashboard" : "core::rain",
+        "mobile" : "core::rain"
+      },
+      "unite" : "mm"
+    },
+    {
+      "name":"Pluie 1H",
+      "logicalId" : "sum_rain_1",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "generic_type": "RAIN_TOTAL",
+      "template" : {
+        "dashboard" : "core::rain",
+        "mobile" : "core::rain"
+      },
+      "unite" : "mm"
+    }
+  ]
+}

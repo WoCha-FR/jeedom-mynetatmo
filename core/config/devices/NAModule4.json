@@ -1,0 +1,95 @@
+{
+  "name" : "Module intérieur",
+  "configuration" : {
+    "battery_type" : "4x1.5V AAA"
+  },
+  "bat_max" : 6000,
+  "bat_min" : 4200,
+  "commands" : [
+    {
+      "name":"CO2",
+      "logicalId" : "co2",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "generic_type": "CO2",
+      "unite" : "ppm",
+      "template" : {
+        "dashboard" : "core::line",
+        "mobile" : "core::line"
+      },
+      "configuration":{
+        "minValue" : 0,
+        "maxValue" : 5000
+      }
+    },
+    {
+      "name":"Température",
+      "logicalId" : "temperature",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "generic_type": "TEMPERATURE",
+      "unite" : "°C",
+      "template" : {
+        "dashboard" : "core::line",
+        "mobile" : "core::line"
+      },
+      "configuration":{
+        "minValue" : -20,
+        "maxValue" : 80
+      }
+    },
+    {
+      "name":"Température min",
+      "logicalId" : "min_temp",
+      "type":"info",
+      "isHistorized" : 0,
+      "subType":"numeric",
+      "generic_type": "TEMPERATURE",
+      "unite" : "°C",
+      "template" : {
+        "dashboard" : "core::line",
+        "mobile" : "core::line"
+      },
+      "configuration":{
+        "minValue" : -20,
+        "maxValue" : 80
+      }
+    },
+    {
+      "name":"Température max",
+      "logicalId" : "max_temp",
+      "type":"info",
+      "isHistorized" : 0,
+      "subType":"numeric",
+      "generic_type": "TEMPERATURE",
+      "unite" : "°C",
+      "template" : {
+        "dashboard" : "core::line",
+        "mobile" : "core::line"
+      },
+      "configuration":{
+        "minValue" : -20,
+        "maxValue" : 80
+      }
+    },
+    {
+      "name":"Humidité",
+      "logicalId" : "humidity",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "generic_type": "HUMIDITY",
+      "unite" : "%",
+      "template" : {
+        "dashboard" : "core::line",
+        "mobile" : "core::line"
+      },
+      "configuration":{
+        "minValue" : 0,
+        "maxValue" : 100
+      }
+    }
+  ]
+}

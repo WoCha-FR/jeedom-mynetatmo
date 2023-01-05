@@ -1,0 +1,88 @@
+{
+  "name" : "Thermostat",
+  "commands" : [
+    {
+      "name": "Anticipation",
+      "type": "info",
+      "subtype": "binary",
+      "isVisible": 1,
+      "isHistorized": 0,
+      "logicalId": "anticipating",
+      "configuration": {
+        "repeatEventManagement": "always"
+      }
+    },
+    {
+      "name": "Fenêtre ouverte",
+      "type": "info",
+      "subtype": "binary",
+      "isVisible": 1,
+      "isHistorized": 0,
+      "logicalId": "open_window",
+      "configuration": {
+        "repeatEventManagement": "always"
+      }
+    },
+    {
+      "name": "Température",
+      "type": "info",
+      "subtype": "numeric",
+      "isVisible": 1,
+      "isHistorized": 1,
+      "unite" : "°C",
+      "generic_type" : "THERMOSTAT_TEMPERATURE",
+      "logicalId": "therm_measured_temperature"
+    },
+    {
+      "name": "Mode",
+      "type": "info",
+      "subtype": "string",
+      "isVisible": 1,
+      "isHistorized": 0,
+      "generic_type" : "THERMOSTAT_MODE",
+      "logicalId": "therm_setpoint_mode"
+    },
+    {
+      "name": "Consigne",
+      "type": "info",
+      "subtype": "numeric",
+      "isVisible": 0,
+      "isHistorized": 0,
+      "unite" : "°C",
+      "generic_type" : "THERMOSTAT_SETPOINT",
+      "logicalId": "therm_setpoint_temperature",
+      "template": {
+        "dashboard" : "button",
+        "mobile" : "button"
+      }
+    },
+    {
+      "name": "Thermostat",
+      "type": "action",
+      "subtype": "slider",
+      "isVisible": 1,
+      "isHistorized": 0,
+      "unite" : "°C",
+      "value" : "Consigne",
+      "generic_type" : "THERMOSTAT_SET_SETPOINT",
+      "template" : {
+        "dashboard" : "button",
+        "mobile" : "button"
+      },
+      "configuration" : {
+        "minValue" : 10,
+        "maxValue" : 35
+      },
+      "logicalId": "setpoint"
+    },
+    {
+      "name": "Auto",
+      "type": "action",
+      "subtype": "other",
+      "isVisible": 1,
+      "isHistorized": 0,
+      "generic_type" : "THERMOSTAT_SET_MODE",
+      "logicalId": "mode_auto"
+    }
+  ]
+}

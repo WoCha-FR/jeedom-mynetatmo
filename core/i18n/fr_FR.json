@@ -1,0 +1,81 @@
+{
+  "plugins\/mynetatmo\/core\/ajax\/mynetatmo.ajax.php": {
+    "401 - Accès non autorisé": "401 - Accès non autorisé",
+    "Aucune methode correspondante à : ": "Aucune methode correspondante à : "
+  },
+  "plugins\/mynetatmo\/core\/class\/mynetatmo.class.php": {
+    "Rafraichir": "Rafraichir"
+  },
+  "plugins\/mynetatmo\/core\/class\/mynetatmo_api.class.php": {
+    "Paramètres manquant pour se connecter.": "Paramètres manquant pour se connecter.",
+    "Pas de données pour se connecter.": "Pas de données pour se connecter."
+  },
+  "plugins\/mynetatmo\/core\/class\/mynetatmo_energy.class.php": {
+    "Programmation": "Programmation",
+    "fini à": "fini à"
+  },
+  "plugins\/mynetatmo\/desktop\/js\/mynetatmo.js": {
+    "Afficher": "Afficher",
+    "Historiser": "Historiser",
+    "Inverser": "Inverser",
+    "Nom": "Nom",
+    "Santé Netatmo": "Santé Netatmo",
+    "Tester": "Tester"
+  },
+  "plugins\/mynetatmo\/desktop\/modal\/health.php": {
+    "Batterie": "Batterie",
+    "Date création": "Date création",
+    "Dernière communication": "Dernière communication",
+    "ID": "ID",
+    "Image": "Image",
+    "Module": "Module",
+    "OK": "OK",
+    "Secteur": "Secteur"
+  },
+  "plugins\/mynetatmo\/desktop\/php\/mynetatmo.php": {
+    "401 - Accès non autorisé": "401 - Accès non autorisé",
+    "Action": "Action",
+    "Activer": "Activer",
+    "Ajouter": "Ajouter",
+    "Anémomètre": "Anémomètre",
+    "Aucun": "Aucun",
+    "Catégorie": "Catégorie",
+    "Commandes": "Commandes",
+    "Configuration": "Configuration",
+    "Configuration avancée": "Configuration avancée",
+    "Dupliquer": "Dupliquer",
+    "Equipement": "Equipement",
+    "Gestion": "Gestion",
+    "Home Coach": "Home Coach",
+    "Identifiant": "Identifiant",
+    "Maison": "Maison",
+    "Mes équipements Netatmo": "Mes équipements Netatmo",
+    "Module extérieur": "Module extérieur",
+    "Module intérieur": "Module intérieur",
+    "Module pluie": "Module pluie",
+    "Nom": "Nom",
+    "Nom de l'équipement Netatmo": "Nom de l'équipement Netatmo",
+    "Nom de l'équipement template": "Nom de l'équipement template",
+    "Objet parent": "Objet parent",
+    "Options": "Options",
+    "Rechercher": "Rechercher",
+    "Santé": "Santé",
+    "Sauvegarder": "Sauvegarder",
+    "Station": "Station",
+    "Supprimer": "Supprimer",
+    "Thermostat": "Thermostat",
+    "Type": "Type",
+    "Vanne": "Vanne",
+    "Visible": "Visible"
+  },
+  "plugins\/mynetatmo\/plugin_info\/configuration.php": {
+    "Client ID": "Client ID",
+    "Client Secret": "Client Secret",
+    "Client secret": "Client secret",
+    "Mot de passe": "Mot de passe",
+    "Nom d'utilisateur": "Nom d'utilisateur",
+    "Synchronisation": "Synchronisation",
+    "Synchronisation réussie": "Synchronisation réussie",
+    "Synchroniser mes équipements": "Synchroniser mes équipements"
+  }
+}

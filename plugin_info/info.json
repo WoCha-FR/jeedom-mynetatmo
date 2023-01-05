@@ -1,0 +1,16 @@
+{
+	"id" : "mynetatmo",
+	"name" : "Netatmo",
+	"description" : "Plugin pour recuperer les équipements Netatmo (Weather,Energie) en mode standalone.",
+	"licence" : "AGPL",
+	"author" : "Wocha",
+	"require" : "4.3",
+	"category" : "devicecommunication",
+	"hasDependency" : false,
+	"hasOwnDeamon" : false,
+	"maxDependancyInstallTime" : 0,
+	"changelog": "",
+	"documentation": "",
+	"language" : ["fr_FR"],
+	"compatibility" : ["miniplus","smart","rpi","docker","diy","mobile","v4"]
+}

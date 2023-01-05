@@ -1,0 +1,72 @@
+{
+  "name" : "Wind",
+  "configuration" : {
+    "battery_type" : "4x1.5V AA"
+  },
+  "bat_max" : 6000,
+  "bat_min" : 3950,
+  "commands" : [
+    {
+      "name":"Direction Vent",
+      "logicalId" : "windangle",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "generic_type": "WIND_DIRECTION",
+      "template" : {
+        "dashboard" : "core::compass",
+        "mobile" : "core::compass"
+      },
+      "unite" : "°"
+    },
+    {
+      "name":"Vitesse Vent",
+      "logicalId" : "windstrength",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "generic_type": "WIND_SPEED",
+      "template" : {
+        "dashboard" : "core::line",
+        "mobile" : "core::line"
+      },
+      "unite" : "km/h"
+    },
+    {
+      "name":"Direction rafale",
+      "logicalId" : "gustangle",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "template" : {
+        "dashboard" : "core::compass",
+        "mobile" : "core::compass"
+      },
+      "unite" : "°"
+    },
+    {
+      "name":"Vitesse rafale",
+      "logicalId" : "guststrength",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "template" : {
+        "dashboard" : "core::line",
+        "mobile" : "core::line"
+      },
+      "unite" : "km/h"
+    },
+    {
+      "name":"Vitesse Max",
+      "logicalId" : "max_wind_str",
+      "type":"info",
+      "isHistorized" : 1,
+      "subType":"numeric",
+      "template" : {
+        "dashboard" : "core::line",
+        "mobile" : "core::line"
+      },
+      "unite" : "km/h"
+    }
+  ]
+}
